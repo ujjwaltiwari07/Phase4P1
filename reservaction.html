@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,
+			initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="reser.css">
+    <link rel="stylesheet" href="index.css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+        </head>
+
+	<title>Restaurant Website</title>
+
+
+
+<body>
+
+
+    <div class="container">
+        <div class="row1">
+        <nav>
+            <ul class="nav-flex-row">
+                <li class="nav-item">
+                    <a href="res.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reservation">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html">Contact</a>
+                </li>
+                
+            </ul>
+        </nav>
+    
+
+<diV>
+<form action="reservation.php" method="post">
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+      <label for="adult">Adults</label>
+      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child">Children</label>
+      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="Booking Date">Booking Date</label>
+      
+    </div>
+    
+    <div class="elem-group">
+      <label for="Table Slection">Select <Table></Table></label>
+      <select id="room-selection" name="room_preference" required>
+          <option value="">Choose Table</Table></option>
+          <option value="1">Windows</option>
+          <option value="2">Normal</option>
+          <option value="3">Center</option>
+          <option value="4">Corner</option>
+      </select>
+    </div>
+    <hr>
+    <div class="elem-group">
+      <label for="message">Anything Else?</label>
+      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+    </div>
+    <button type="submit">Book The Table</button>
+  </form>
+</div></diV>
+</body>
+  </html>
+  
